@@ -119,26 +119,35 @@ export function HeroSection() {
   return (
     <section className="relative min-h-screen md:min-h-0 md:h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
-        {heroSlides.map((slide, index) => (
-          <div
-            key={index}
-            className={`absolute inset-0 transition-opacity duration-1000 ${
-              index === currentSlide ? "opacity-100" : "opacity-0"
-            }`}
-          >
-            {/* Menggunakan gambar sesuai device dari path yang sudah diperiksa */}
-            <Image
-              src={isMobile ? slide.mobileImage : slide.image}
-              alt={slide.title}
-              fill
-              className="object-cover"
-              // Prioritaskan gambar pertama untuk mempercepat waktu render
-              priority={index === 0}
-              quality={90}
-            />
-            <div className="absolute inset-0 bg-black/40"></div>
-          </div>
-        ))}
+        {heroSlides.map((slide, index) => {
+          // Tentukan jalur gambar yang benar, pastikan case-sensitivity
+          const imageUrl = isMobile ? slide.mobileImage : slide.image;
+          return (
+            <div
+              key={index}
+              className={`absolute inset-0 transition-opacity duration-1000 ${
+                index === currentSlide ? "opacity-100" : "opacity-0"
+              }`}
+            >
+              <Image
+                // Memberikan key yang unik agar React me-render ulang saat path berubah
+                key={imageUrl}
+                src={imageUrl}
+                alt={slide.title}
+                fill
+                className="object-cover"
+                // Prioritaskan gambar pertama untuk mempercepat waktu render
+                priority={index === 0}
+                quality={90}
+                // Tambahkan fetchPriority untuk memastikan browser mengutamakan gambar hero
+                fetchPriority={index === currentSlide ? "high" : "low"}
+                // Menambahkan onError untuk penanganan error
+                onError={(e) => console.error(`Failed to load image: ${imageUrl}`, e)}
+              />
+              <div className="absolute inset-0 bg-black/40"></div>
+            </div>
+          );
+        })}
       </div>
 
       <button
@@ -190,3 +199,4 @@ export function HeroSection() {
     </section>
   );
 }
+
