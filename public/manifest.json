@@ -1,0 +1,28 @@
+{
+  "name": "CV ATS RentCar",
+  "short_name": "ATS RentCar",
+  "description": "Layanan rental mobil terpercaya di Sumatera Utara",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "16x16 32x32",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "travel", "transportation"],
+  "lang": "id",
+  "dir": "ltr",
+  "scope": "/",
+  "prefer_related_applications": false
+}
