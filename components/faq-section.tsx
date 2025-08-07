@@ -19,7 +19,7 @@ const faqData = [
       {
         question: "Bagaimana cara memesan mobil rental?",
         answer:
-          "Anda bisa memesan melalui WhatsApp di nomor 085207265558 atau melalui website kami. Tim kami akan membantu proses pemesanan dan memberikan informasi lengkap mengenai ketersediaan mobil.",
+          "Anda bisa memesan melalui WhatsApp di nomor 082115471992 atau melalui website kami. Tim kami akan membantu proses pemesanan dan memberikan informasi lengkap mengenai ketersediaan mobil.",
       },
       {
         question: "Apakah tersedia layanan antar-jemput?",
