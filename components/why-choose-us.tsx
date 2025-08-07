@@ -1,4 +1,6 @@
-import { Card, CardContent } from "@/components/ui/card"
+// components/why-choose-us.tsx
+
+import { Card, CardContent } from "@/components/ui/card";
 import {
   Shield,
   DollarSign,
@@ -11,59 +13,59 @@ import {
   Award,
   Zap,
   CheckCircle,
-} from "lucide-react"
+} from "lucide-react";
 
 export function WhyChooseUs() {
   const reasons = [
     {
       icon: UserCheck,
       title: "Pelayanan Profesional",
-      description: "Tim customer service yang responsif dan driver berpengalaman dengan sertifikat resmi",
+      description: "Tim customer service yang responsif dan driver berpengalaman dengan sertifikat resmi. Kami adalah pilihan terbaik untuk rental mobil dengan supir di Medan.",
       color: "lime",
     },
     {
       icon: DollarSign,
       title: "Harga Kompetitif",
-      description: "Tarif terjangkau dengan kualitas premium, tanpa biaya tersembunyi",
+      description: "Tarif terjangkau dengan kualitas premium, tanpa biaya tersembunyi. Solusi sewa mobil di Medan dengan harga murah dan transparan.",
       color: "blue",
     },
     {
       icon: Wrench,
       title: "Armada Terawat",
-      description: "Perawatan rutin dan pengecekan berkala memastikan kondisi kendaraan selalu prima",
+      description: "Perawatan rutin dan pengecekan berkala memastikan kondisi kendaraan selalu prima. Armada terbaik untuk sewa mobil matic dan manual di Medan.",
       color: "black",
     },
     {
       icon: Shield,
       title: "Asuransi Lengkap",
-      description: "Semua kendaraan dilengkapi asuransi comprehensive untuk keamanan perjalanan",
+      description: "Semua kendaraan dilengkapi asuransi comprehensive untuk keamanan perjalanan. Rental mobil aman dan terjamin di Medan.",
       color: "blue",
     },
     {
       icon: Clock,
       title: "Layanan 24/7",
-      description: "Siap melayani Anda kapan saja, termasuk hari libur dan situasi darurat",
+      description: "Siap melayani Anda kapan saja, termasuk hari libur dan situasi darurat. Layanan sewa mobil 24 jam di Medan.",
       color: "lime",
     },
     {
       icon: MapPin,
       title: "Coverage Luas",
-      description: "Melayani Medan, Silangit, Danau Toba, Berastagi, dan destinasi wisata lainnya",
+      description: "Melayani Medan, Silangit, Danau Toba, Berastagi, dan destinasi wisata lainnya. Pilihan ideal untuk tour Danau Toba dari Medan.",
       color: "black",
     },
     {
       icon: Star,
       title: "Rating Tinggi",
-      description: "Kepuasan pelanggan terbukti dengan rating 4.9/5 dari 1000+ pelanggan",
+      description: "Kepuasan pelanggan terbukti dengan rating 4.9/5 dari 1000+ pelanggan. Bukti kepercayaan pelanggan pada jasa rental mobil kami.",
       color: "lime",
     },
     {
       icon: Phone,
       title: "Booking Mudah",
-      description: "Proses reservasi yang simpel via WhatsApp dengan konfirmasi cepat",
+      description: "Proses reservasi yang simpel via WhatsApp dengan konfirmasi cepat. Sewa mobil medan cepat dan praktis.",
       color: "blue",
     },
-  ]
+  ];
 
   return (
     <section className="py-20 relative bg-gray-50">
@@ -152,5 +154,5 @@ export function WhyChooseUs() {
         </div>
       </div>
     </section>
-  )
+  );
 }
