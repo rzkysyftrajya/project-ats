@@ -113,7 +113,7 @@ export function FAQSection() {
           </p>
         </header>
 
-        {/* Category Filter */}
+        { }
         <div className="flex flex-wrap justify-center gap-3 mb-8">
           {categories.map((category) => (
             <Button
@@ -131,7 +131,7 @@ export function FAQSection() {
           ))}
         </div>
 
-        {/* FAQ Items */}
+        { }
         <div className="max-w-4xl mx-auto space-y-4">
           {filteredFAQ.map((category) => (
             <div key={category.category}>
@@ -183,7 +183,7 @@ export function FAQSection() {
           ))}
         </div>
 
-        {/* Contact CTA */}
+        { }
         <div className="text-center mt-12">
           <div className="bg-gradient-to-r from-emerald-50 to-blue-50 rounded-2xl p-8 max-w-2xl mx-auto">
             <h3 className="text-xl font-bold text-gray-800 mb-4">
