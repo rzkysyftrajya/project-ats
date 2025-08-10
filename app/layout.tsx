@@ -6,7 +6,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import ClientLayout from "./client-layout";
 
-const inter = Inter({ subsets: ["latin" }]);
+const inter = Inter({ subsets: ["latin"] });
 
 // Metadata SEO untuk website
 export const metadata: Metadata = {
