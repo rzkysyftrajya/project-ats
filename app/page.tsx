@@ -1,4 +1,6 @@
 // HomePage.tsx
+import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { HeroSection } from "@/components/hero-section";
 import { TrustBadges } from "@/components/trust-badges";
 import { StatsCounter } from "@/components/stats-counter";
