@@ -10,6 +10,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({ subsets: ["latin"] });
 
+// Metadata lengkap
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.atsrentcar.com"),
   title: "Rental Mobil Medan Murah & Terpercaya | CV ATS RentCar",
@@ -44,23 +45,7 @@ export const metadata: Metadata = {
     "sewa mobil bandara Sam Ratulangi",
     "sewa mobil bandara Iskandar",
     "sewa mobil bandara Sultan Aji Muhammad Sulaiman",
-    "sewa mobil bandara Sultan Iskandar Muda",
-    "rental mobil di bandara Soekarno Hatta",
-    "rental mobil di bandara Hang Nadim",
-    "rental mobil di bandara Halim Perdanakusuma",
-    "rental mobil di bandara Minangkabau",
-    "rental mobil di bandara Sultan Syarif Kasim II",
-    "rental mobil di bandara Sultan Mahmud Badaruddin II",
-    "rental mobil di bandara Husein Sastranegara",
-    "rental mobil di bandara Yogyakarta",
-    "rental mobil di bandara Jendral Ahmad Yani",
-    "rental mobil di bandara Juanda",
-    "rental mobil di bandara Gusti Ngurah Rai",
-    "rental mobil di bandara Sultan Hasanuddin",
-    "rental mobil di bandara Sam Ratulangi",
-    "rental mobil di bandara Iskandar",
-    "rental mobil di bandara Sultan Aji Muhammad Sulaiman",
-    "rental mobil di bandara Sultan Iskandar Muda",
+    "sewa mobil bandara Sultan Iskandar Muda"
   ],
   authors: [{ name: "CV ATS RentCar" }],
   alternates: { canonical: "/" },
@@ -142,71 +127,6 @@ export default function RootLayout({
             `,
           }}
         />
-      </body>
-    </html>
-  );
-}    "sewa mobil bandara Husein Sastranegara",
-    "sewa mobil bandara Yogyakarta",
-    "sewa mobil bandara Jendral Ahmad Yani",
-    "sewa mobil bandara Juanda",
-    "sewa mobil bandara Gusti Ngurah Rai",
-    "sewa mobil bandara Sultan Hasanuddin",
-    "sewa mobil bandara Sam Ratulangi",
-    "sewa mobil bandara Iskandar",
-    "sewa mobil bandara Sultan Aji Muhammad Sulaiman",
-    "sewa mobil bandara Sultan Iskandar Muda",
-    "rental mobil di bandara Soekarno Hatta",
-    "rental mobil di bandara Hang Nadim",
-    "rental mobil di bandara Halim Perdanakusuma",
-    "rental mobil di bandara Minangkabau",
-    "rental mobil di bandara Sultan Syarif Kasim II",
-    "rental mobil di bandara Sultan Mahmud Badaruddin II",
-    "rental mobil di bandara Husein Sastranegara",
-    "rental mobil di bandara Yogyakarta",
-    "rental mobil di bandara Jendral Ahmad Yani",
-    "rental mobil di bandara Juanda",
-    "rental mobil di bandara Gusti Ngurah Rai",
-    "rental mobil di bandara Sultan Hasanuddin",
-    "rental mobil di bandara Sam Ratulangi",
-    "rental mobil di bandara Iskandar",
-    "rental mobil di bandara Sultan Aji Muhammad Sulaiman",
-    "rental mobil di bandara Sultan Iskandar Muda",
-  ],
-  authors: [{ name: "CV ATS RentCar" }],
-  openGraph: {
-    title: "Rental Mobil Medan Murah & Terpercaya | CV ATS RentCar",
-    description: "Sewa mobil Medan lepas kunci dan dengan supir. Tersedia layanan rental mobil harian, bulanan, dan paket tour Danau Toba. Harga terjangkau, armada lengkap.",
-    url: "https://www.atsrentcar.com",
-    images: [
-      {
-        url: "https://www.atsrentcar.com/images/mobil-medan.jpg",
-        alt: "Rental Mobil di Medan",
-      },
-    ],
-  },
-};
-
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html lang="id">
-      <head>
-        <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17448458706">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-17448458706');
-</script>
-      </head>
-      <body className={inter.className}>
-        <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
   );
